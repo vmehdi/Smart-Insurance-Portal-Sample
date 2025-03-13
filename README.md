@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Insurance Portal Sample
 
-## Getting Started
+This project is a Smart Insurance Application Portal built with Next.js. It allows users to apply for various insurance types (Health, Home, Car, Life, etc.) through dynamically generated forms fetched from an API.
 
-First, run the development server:
+## Key Features
+-   Dynamic insurance application forms
+-   Form structure fetched from an API
+-   Dynamically handles fields, conditions, and validations
+-   Efficient application management
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies
+- **Next.js** – (v15) building the frontend application.
+- **Axios** – handling API requests.
+- **React-Query** – Query API.
+- **ZOD** – Validation.
+- **Jotai** – State Management.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features Implemented
+### Dynamic Form Generation
+- Fetches form structure from an API.
+– Forms are fetched from an API and rendered dynamically.
+- Supports nested form sections.
+- Some fields fetch options from an API based on other field values
+- Validation all form fields using ZOD before submission.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Customizable Table (List View)
+- **Customizable Table**: Users can select which columns to display in the applications list
+- **Sorting and Filtering**: Applications can be sorted and filtered
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Other Features
+- **Dark Mode**: Toggle between light and dark themes
+- **Responsive Design**: Works on all device sizes
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Installation & Setup
+1. Clone the repository:
+  ```
+   git clone https://github.com/vmehdi/Smart-Insurance-Portal-Sample.git
+   cd your-repository
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+  ```
+  bun install
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run in development mode:
+  ```
+  bun run dev
+  ```
 
-## Deploy on Vercel
+4. Build and start in production mode:
+  ```
+  bun run build
+  bun run start
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Installation
+
+(Provide installation instructions, e.g., using `npm` or `bun`)

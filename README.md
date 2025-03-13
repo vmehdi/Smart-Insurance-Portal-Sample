@@ -10,10 +10,12 @@ This project is a Smart Insurance Application Portal built with Next.js. It allo
 
 ## Technologies
 - **Next.js** – (v15) building the frontend application.
-- **Axios** – handling API requests.
+- **Tailwind** – Modern Websites Css.
 - **React-Query** – Query API.
+- **React-react-table** – Data Table UI.
 - **ZOD** – Validation.
 - **Jotai** – State Management.
+- **react-hook-form** – Form Management Library.
 
 ## Features Implemented
 ### Dynamic Form Generation
